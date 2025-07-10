@@ -1,0 +1,145 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>Futuristic Portfolio</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- TypeIt for typing animation -->
+  <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+</head>
+
+<audio id="ambientSound" loop autoplay>
+  <source src="https://audio.jukehost.co.uk/Z7TP1mnHypyVQUbBIzv21UBKnEKkZenJ" type="audio/mpeg">
+</audio>
+
+
+<button id="soundToggle" class="fixed top-4 right-4 bg-transparent border border-cyan-500 text-cyan-500 px-4 py-2 rounded-full backdrop-blur-md hover:bg-cyan-500 hover:text-black transition z-50">
+  🔊 Sound On
+</button>
+
+
+<body class="text-white font-sans">
+  <div id="particles-js" class="fixed inset-0 -z-20"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" style="position:absolute; width:0; height:0;">
+  <filter id="liquidGlassFilter">
+    <feTurbulence type="fractalNoise" baseFrequency="0.008 0.008" numOctaves="2" result="noise"/>
+    <feGaussianBlur in="noise" stdDeviation="2" result="blur"/>
+    <feDisplacementMap in="SourceGraphic" in2="blur" scale="20"/>
+  </filter>
+</svg>
+
+
+  <svg id="blobs" class="fixed inset-0 -z-10" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"></svg>
+
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+    <div id="three-bg" class="absolute inset-0 -z-10"></div>
+    <h1 id="hero-text" class="text-5xl md:text-7xl neon-text mb-4"></h1>
+    <p class="text-xl md:text-2xl max-w-2xl">A forward-thinking designer, future engineer & visionary pushing tech into the future.</p>
+  </section>
+
+  <!-- About Section -->
+<section class="min-h-screen flex flex-col justify-center items-center px-6" data-aos="fade-up">
+  <div class="glass p-8 rounded-2xl max-w-3xl text-center">
+    <h2 class="text-3xl mb-4 font-bold">Why I Create</h2>
+    <p class="text-lg">I merge design, code, and vision to craft experiences that feel like they arrived from 2030. My work blurs the lines between future aesthetics and functional brilliance.</p>
+  </div>
+</section>
+
+<section class="min-h-screen px-6 py-20" data-aos="fade-up">
+  <h2 class="text-3xl text-center mb-10 font-bold">Featured Projects</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in">
+      <h3 class="text-xl font-semibold mb-2">MenuetOS 4 Concept</h3>
+      <p class="text-sm">A futuristic OS with liquid glass UI and advanced features for a 2030+ world.</p>
+    </div>
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="text-xl font-semibold mb-2">Lease 3D Engine</h3>
+      <p class="text-sm">A powerful game creation platform merging simplicity and visual depth.</p>
+    </div>
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2">Multiverse Explorer</h3>
+      <p class="text-sm">An exploration game blending science, design, and storytelling.</p>
+    </div>
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2">CityBridges</h3>
+      <p class="text-sm">A city builder game blending managment, architect design, and storytelling.</p>
+    </div>
+  </div>
+</section>
+  
+<section class="min-h-screen px-6 py-20" data-aos="fade-up">
+  <h2 class="text-3xl text-center mb-10 font-bold">Experience & Certificates</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in">
+      <h3 class="text-xl font-semibold mb-2">In AI</h3>
+      <p class="text-sm">I have taken multiple internships and workshops with "Clevered" and Oxford Professor Dr. Ken. I even got to attend workshops for AI and prompt engineering that helped expand my understanding on AI.</p>
+    </div>
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="100">
+      <h3 class="text-xl font-semibold mb-2">MenuetOS Collaboration</h3>
+      <p class="text-sm">I have worked alongside the creator of the operating systemm, MenuetOS to bring fresh new designs and a whole AI-powered system.</p>
+    </div>
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2">On a New Journey</h3>
+      <p class="text-sm">Completed university-level education in AI with "Clevered" all the way till the AI Experts Level!</p>
+    </div>
+    <div class="glass project-card p-6 rounded-2xl" data-aos="zoom-in" data-aos-delay="200">
+      <h3 class="text-xl font-semibold mb-2">CityBridges</h3>
+      <p class="text-sm">A city builder game blending managment, architect design, and storytelling.</p>
+    </div>
+  </div>
+</section>
+
+<section class="min-h-screen flex flex-col justify-center items-center px-6" data-aos="fade-up">
+  <div class="glass p-8 rounded-2xl max-w-3xl text-center">
+    <h2 class="text-3xl mb-4 font-bold">Playground Lab</h2>
+    <p class="text-lg">Explore my experiments, prototypes, and unfiltered ideas that push creative boundaries and imagine new possibilities.</p>
+  </div>
+
+<div class="carousel-container">
+  <button class="carousel-btn prev">‹</button>
+  <div class="carousel-track">
+    <a href="https://codepen.io/yamen_nasr/full/QwLNbgZ" target="_blank" class="carousel-slide">
+      <img src="https://iili.io/FEEHtV4.md.png" alt="Project 1 cover" />
+    </a>
+    <a href="https://www.figma.com/proto/enbdIbSxXKpR2ufuiwxaqT/Direct-Meal?page-id=0%3A1&node-id=3-351&viewport=191%2C269%2C0.44&t=EB8FC4zFPwOguyd1-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A2&hotspot-hints=0" target="_blank" class="carousel-slide">
+      <img src="https://iili.io/FE1xDRR.md.png" alt="Project 2 cover" />
+    </a>
+    <a href="https://codepen.io/yamen_nasr/full/XWLdzaZ" target="_blank" class="carousel-slide">
+      <img src="https://iili.io/FEEEIv2.md.png" alt="Project 3 cover" />
+    </a>
+    <a href="https://codepen.io/yamen_nasr/full/XWLdzaZm" target="_blank" class="carousel-slide">
+      <img src="https://iili.io/FE1xDRR.md.png" alt="Project 4 cover" />
+    </a>
+  </div>
+  <button class="carousel-btn next">›</button>
+
+  <button class="pause-btn">⏸️ Pause</button>
+  <div class="progress-bar">
+    <div class="progress-fill"></div>
+  </div>
+</div>
+
+<div class="carousel-dots"></div>
+
+</section>
+
+<section class="min-h-screen flex flex-col justify-center items-center px-6" data-aos="fade-up">
+  <div class="glass p-8 rounded-2xl max-w-3xl text-center">
+    <h2 class="text-3xl mb-4 font-bold">Autobiography</h2>
+    <p class="text-lg">My name is Yamen Nasr, a 17-year-old student. I am constantly acquiring new knowledge, both through my studies at school and during my online sessions, as well as through the experiences of everyday life. I take great pleasure in embracing the wonders of the world, as it inspires me with a sense of creativity. In the future, my ambition is to transform the world into a realm of greater harmony, simplicity, and convenience for future generations to come.</p>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section class="min-h-[50vh] flex flex-col justify-center items-center px-6">
+    <h2 class="text-3xl mb-4 font-bold">Let's Connect</h2>
+    <p class="text-lg mb-6">Want to collaborate or explore the future together? Let’s talk.</p>
+    <a href="mailto:yamennasr@icloud.com" class="glass px-6 py-3 rounded-full font-semibold transition hover:scale-105">Email Me</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
